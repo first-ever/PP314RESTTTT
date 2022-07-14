@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title></title>
+</head>
+<body>
+
+
+<div class="container align-self-center">
+    <div class="row align-items-center">
+        <div class="col-md-6 mx-auto justify-content-center align-items-center">
+            <form th:method="post" th:action="@{/loginAction}">
+                <h2 class="font-weight-bold">Please sign in</h2>
+                <div class="row">
+                    <input name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                </div>
+                <div class="row">
+                    <input name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                </br>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
