@@ -16,7 +16,7 @@ function insertUser() {
         'password': userAddFormId.find('#password').val(),
         'roles': userAddFormId.find('#rroles')
             .val()
-            .map(function(val, index) {
+            .map(function(val) {
                 return {id:val};
             })
     }
